@@ -1,0 +1,16 @@
+title: VelocityRulePeriod
+x-stoplight:
+  id: tctqfe7o7726c
+oneOf:
+  - $ref: "./VelocityCalendarPeriod.yaml"
+  - $ref: "./VelocityRollingPeriod.yaml"
+discriminator:
+  propertyName: type
+  mapping:
+    calendar1: "./VelocityCalendarPeriod.yaml"
+    calendar2: "./VelocityCalendarPeriod.yaml"
+    calendar3: "./VelocityCalendarPeriod.yaml"
+    rolling1: "./VelocityRollingPeriod.yaml"
+    rolling2: "./VelocityRollingPeriod.yaml"
+    rolling3: "./VelocityRollingPeriod.yaml"
+

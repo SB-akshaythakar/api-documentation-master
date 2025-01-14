@@ -1,0 +1,7 @@
+title: Date-Time
+type: string
+x-stoplight:
+  id: qg2falw8saf32
+description: Date complying to RFC 3339 (Atom) date and time format
+format: date-time
+example: "2000-01-20T12:00:00Z"

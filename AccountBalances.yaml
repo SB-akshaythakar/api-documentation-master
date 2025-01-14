@@ -1,0 +1,26 @@
+title: AccountBalances
+x-stoplight:
+  id: v48akruz7hw65
+type: object
+required:
+  - accountId
+  - balance
+  - availableBalance
+properties:
+  accountId:
+    $ref: './AccountNumber.yaml'
+  balance:
+    allOf:
+      - $ref: './Amount.yaml'
+      - readOnly: true
+      - description: Account's balance
+  availableBalance:
+    allOf:
+      - $ref: ./Amount.yaml
+      - readOnly: true
+      - description: 'Account''s balance, minus all reserved funds'
+  balanceByValueDate:
+    allOf:
+      - $ref: ./Amount.yaml
+      - readOnly: true
+      - description: 'Account''s balance, calculated by value date'

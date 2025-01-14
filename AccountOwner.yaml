@@ -1,0 +1,16 @@
+type: object
+properties:
+  userId:
+    type: string
+  ownerName:
+    type: string
+  status:
+    type: string
+  creationDate:
+    type: string
+x-examples:
+  Example 1:
+    userId: '123'
+    ownerName: John Doe
+    status: ACTIVE
+    creationDate: '2024-01-01'

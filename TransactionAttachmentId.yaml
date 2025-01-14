@@ -1,0 +1,7 @@
+title: TransactionAttachmentId
+x-stoplight:
+  id: nccul0r9wodmt
+type: string
+description: Transaction attachment unique identifier
+readOnly: true
+example: TRXATT123

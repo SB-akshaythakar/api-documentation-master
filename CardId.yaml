@@ -1,0 +1,6 @@
+title: Card ID
+x-stoplight:
+  id: kh9726t4hcraa
+type: string
+description: Card unique identifier.
+example: 'CARD123'

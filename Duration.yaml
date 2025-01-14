@@ -1,0 +1,10 @@
+title: Duration
+x-stoplight:
+  id: 3gsecbxwhhe8a
+type: object
+properties:
+  value:
+    type: integer
+    example: 42
+  unit:
+    $ref: "./Periodicity.yaml"

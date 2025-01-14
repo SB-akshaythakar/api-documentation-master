@@ -1,0 +1,9 @@
+title: GeoLocationMode
+x-stoplight:
+  id: 65fpm0wnzkrau
+type: object
+properties:
+  value:
+    type: string
+  label:
+    type: string

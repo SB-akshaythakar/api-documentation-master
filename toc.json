@@ -1,0 +1,284 @@
+{
+  "collapseTableOfContents": true,
+  "items": [
+    {
+      "type": "item",
+      "title": "Getting started",
+      "uri": "/docs/welcome.md"
+    },
+    {
+      "type": "divider",
+      "title": "Functional concepts"
+    },
+    {
+      "type": "item",
+      "title": "Users",
+      "uri": "/docs/product/users-product.md"
+    },
+    {
+      "type": "item",
+      "title": "Accounts",
+      "uri": "/docs/product/accounts-product.md"
+    },
+    {
+      "type": "item",
+      "title": "Cards",
+      "uri": "/docs/product/cards-product.md"
+    },
+    {
+      "type": "item",
+      "title": "Payments",
+      "uri": "/docs/product/payments-product.md"
+    },
+    {
+      "type": "divider",
+      "title": "Technical details"
+    },
+    {
+      "type": "item",
+      "title": "Data Representation",
+      "uri": "docs/technical details/data-type-representations.md"
+    },
+    {
+      "type": "item",
+      "title": "Requests and Responses Content",
+      "uri": "docs/technical details/requests-responses-content.md"
+    },
+    {
+      "type": "item",
+      "title": "Authentication",
+      "uri": "/docs/authentication/auth-methods-summary.md"
+    },  
+    {
+      "type": "item",
+      "title": "Events and Webhooks",
+      "uri": "docs/technical details/event-webhooks.md"
+    },
+    {
+      "type": "divider",
+      "title": "Service based APIs"
+    },
+    {
+      "type": "group", 
+      "title" : "Service Domain API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Service Domain API Reference",
+          "uri": "/service-domain.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Standard Interbanking  API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Standard Interbanking API Reference",
+          "uri": "/standard_interbanking.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Card Authorization API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Card Authorization API Reference",
+          "uri": "/sae.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Interbanking API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Authorization",
+          "uri": "/docs/interbanking/oauth2-authorization.md"
+        },
+        {
+          "type": "item",
+          "title": "Interbanking API Reference",
+          "uri": "/interbanking.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Savings API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Savings API Reference",
+          "uri": "/savings.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Interest Calculation API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Interest Calculation API Reference",
+          "uri": "/calculation-engine.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Credit Module API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Credit API Reference",
+          "uri": "/credit.yml"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "title": "User based APIs"
+    },
+    {
+      "type": "group", 
+      "title" : "Acceptor API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Authorization",
+          "uri": "/docs/acceptor/oauth2-authorization.md"
+        },
+        {
+          "type": "item",
+          "title": "Server Sent Events",
+          "uri": "/docs/acceptor/server-sent-events.md"
+        },
+        {
+          "type": "item",
+          "title": "Error Codes",
+          "uri": "/docs/acceptor/error-codes.md"
+        },
+        {
+          "type": "item",
+          "title": "Acceptor API Reference",
+          "uri": "/acceptor.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Distributor API",
+      "uri":"docs/distributor/description.md",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Authorization",
+          "uri": "/docs/distributor/oauth2-authorization.md"
+        },
+        {
+          "type": "item",
+          "title": "Distributor API Reference",
+          "uri": "/distributor.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Client API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Authorization",
+          "uri": "/docs/client/oauth2-authorization.md"
+        },
+        {
+          "type": "item",
+          "title": "Localization",
+          "uri": "/docs/client/language-management.md"
+        },
+        {
+          "type": "item",
+          "title": "Using virtual keyboards",
+          "uri": "/docs/client/virtual-keyboard.md"
+        },
+        {
+          "type": "item",
+          "title": "Handling User-Agent",
+          "uri": "/docs/client/user-agent.md"
+        },
+        {
+          "type": "item",
+          "title": "Error Codes",
+          "uri": "/docs/client/error-codes.md"
+        },
+        {
+          "type": "item",
+          "title": "Client API Reference",
+          "uri": "/client.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Company API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Company API Reference",
+          "uri": "/company.yml"
+        }
+      ]
+    },
+    {
+      "type": "group", 
+      "title" : "Admin API",
+      "items" : [
+        {
+          "type": "item",
+          "title": "Authorization",
+          "uri": "/docs/admin/oauth2-authorization.md"
+        },
+        {
+          "type": "item",
+          "title": "Search Requests",
+          "uri": "/docs/admin/search-requests.md"
+        },
+        {
+          "type": "item",
+          "title": "Admin API Reference",
+          "uri": "/admin.yml"
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "title": "Webhooks reference",
+      "uri": "/webhooks.yml"
+    },
+    {
+      "type":"item",
+      "title":"Skaleet Website",
+      "uri":"https://skaleet.com"
+    },
+    {
+      "type": "item",
+      "title": "Moneypot API reference",
+      "uri": "/moneypot.yml"
+    },
+    {
+      "type": "item",
+      "title": "WebInterface API reference",
+      "uri": "/webinterface.yml"
+    },
+    {
+      "type": "item",
+      "title": "PSD2 XS2A API reference",
+      "uri": "/psd2-xs2a.yml"
+    }
+  ]
+}

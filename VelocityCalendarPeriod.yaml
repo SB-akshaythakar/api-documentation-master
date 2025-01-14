@@ -1,0 +1,21 @@
+title: VelocityCalendarPeriod
+x-stoplight:
+  id: 6h4bfq0gf7f65
+type: object
+properties:
+  type:
+    $ref: "./VelocityRuleType.yaml"
+  periodicity:
+    $ref: "./VelocityCalendarPeriodicity.yaml"
+  startDayOfWeek:
+    type: integer
+    example: 1
+    description: Only present if `periodicity=WEEK`
+  startDayOfMonth:
+    type: integer
+    example: 1
+    description: Only present if `periodicity=MONTH`
+  startMonth:
+    type: integer
+    example: 1
+    description: Only present if `periodicity=YEAR` or `periodicity=TRIMESTER` or `periodicity=SEMESTER`

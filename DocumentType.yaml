@@ -1,0 +1,36 @@
+title: DocumentType
+x-stoplight:
+  id: os0x9gz63rxy5
+type: object
+properties:
+  code:
+    type: string
+    example: "PASPOR"
+  name:
+    type: string
+    example: "Passport"
+  legalType:
+    type: string
+    enum: [ "NATURAL_PERSON", "LEGAL_ENTITY" ]
+  originType:
+    type: string
+    enum: [ "PREDEFINED", "CUSTOM" ]
+    example: "CUSTOM"
+  isReceived:
+    type: boolean
+    example: false
+  isGenerated:
+    type: boolean
+    example: false
+  authorizedFormats:
+    type: array
+    example: [ "image/jpeg", "image/png", "image/gif", "application/pdf" ]
+    items:
+        type: string
+        enum: [ "image/jpeg", "image/png", "image/gif", "application/pdf" ]
+  mandatoryPages:
+    type: integer
+    example: 1
+  optionnalPages:
+    type: integer
+    example: 0

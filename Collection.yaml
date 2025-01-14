@@ -1,0 +1,15 @@
+title: Collection
+x-stoplight:
+  id: xypreyvec5vxy
+type: object
+required:
+  - items
+properties:
+  items:
+    type: array
+    items:
+      type: object
+      x-stoplight:
+        id: kraboi6t8t9qc
+    x-stoplight:
+      id: gg5xthk9f108s

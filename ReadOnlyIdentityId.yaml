@@ -1,0 +1,6 @@
+title: ReadOnlyIdentityId
+x-stoplight:
+  id: hy11jkd366ssz
+allOf:
+  - $ref: "./IdentityId.yaml"
+  - readOnly: true

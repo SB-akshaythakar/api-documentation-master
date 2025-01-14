@@ -1,0 +1,44 @@
+version: '3'
+dotenv:
+  - .env
+
+silent: true
+
+tasks:
+  lint-rdme:
+    desc: "Lint API Documentation using RDME. Linted API given with API_IDENTIFIER"
+    vars:
+      API_IDENTIFIER: '{{.API_IDENTIFIER | default .CLI_ARGS | default "service-domain"}}'
+      DOCKER_REPO: '{{.DOCKER_REPO | default "docker.tag/"}}'
+    cmds:
+      - docker run --rm -v .:/workspace {{.DOCKER_REPO}}readme/rdme:latest openapi:validate /workspace/{{.API_IDENTIFIER}}.yml
+
+  lint-redocly:
+    desc: "Lint API Documentation using Redocly. Linted API given with API_IDENTIFIER"
+    vars:
+      API_IDENTIFIER: '{{.API_IDENTIFIER | default .CLI_ARGS | default "service-domain"}}'
+      DOCKER_REPO: '{{.DOCKER_REPO | default "docker.tag/"}}'
+    cmds:
+      - docker run --rm --user=$UID -v .:/workspace {{.DOCKER_REPO}}redocly/cli:latest lint --config=/workspace/ci/.redocly.yaml /workspace/{{.API_IDENTIFIER}}.yml
+
+  lint-spectral:
+    desc: "Lint API Documentation using Spectral. Linted API given with API_IDENTIFIER"
+    vars:
+      API_IDENTIFIER: '{{.API_IDENTIFIER | default .CLI_ARGS | default "service-domain"}}'
+      DOCKER_REPO: '{{.DOCKER_REPO | default "docker.tag/"}}'
+    cmds:
+      - |
+        docker run \
+          --rm \
+          -v .:/workspace \
+          {{.DOCKER_REPO}}stoplight/spectral \
+          lint -v -D -r /workspace/ci/spectral-configuration/.spectral.json -f junit -o /workspace/spectral-report.xml /workspace/{{.API_IDENTIFIER}}.yml
+  lint:
+    desc: "Lint API Documentation. Linted API given with API_IDENTIFIER"
+    vars:
+      API_IDENTIFIER: '{{.API_IDENTIFIER | default .CLI_ARGS | default "service-domain"}}'
+    cmds:
+      - task: lint-rdme
+      - task: lint-redocly
+      - task: lint-spectral
+ 

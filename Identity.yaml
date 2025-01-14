@@ -1,0 +1,38 @@
+title: Identity
+x-stoplight:
+  id: dgrn5ay29nbl9
+type: object
+description: An Identity
+required:
+  - id
+  - legalType
+  - kyc
+  - role
+  - creationDate
+  - updateDate
+properties:
+  id:
+    $ref: './IdentityId.yaml'
+  legalType:
+    $ref: './LegalType.yaml'
+  kyc:
+    $ref: './Kyc.yaml'
+  profileId:
+    $ref: './ProfileId.yaml'
+  distributorId:
+    $ref: './IdentityId.yaml'
+  externalId:
+    $ref: './ExternalId.yaml'
+  role:
+    $ref: './IdentityRole.yaml'
+  creationDate:
+    type: string
+    format: date-time
+    description: Identity's creation date
+  updateDate:
+    type: string
+    format: date-time
+    description: Identity's last update date
+  kycExpirationDate:
+    format: date-time
+    description: Identity's closest KYC expiration date
