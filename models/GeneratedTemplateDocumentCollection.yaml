@@ -1,0 +1,29 @@
+title: GeneratedTemplateDocumentCollection
+x-stoplight:
+  id: cg63xinw9mexf
+type: object
+properties:
+  items:
+    type: array
+    x-stoplight:
+      id: wfgqt2ycmmvie
+    items:
+      type: object
+      $ref: ./GeneratedTemplateDocumentCollectionItem.yaml
+      x-stoplight:
+        id: fyhk0d5sm33d0
+  count:
+    type: integer
+    x-stoplight:
+      id: l425xlk6oslym
+    description: the total count of objects in collection
+  offset:
+    type: integer
+    x-stoplight:
+      id: 7y5hci7f7yp7y
+    description: Pagination start (from 0)
+  limit:
+    type: integer
+    x-stoplight:
+      id: 5lhcwab9trcf9
+    description: Number of results to display (default 20)
