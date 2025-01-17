@@ -4979,7 +4979,7 @@ paths:
           examples:
             - '10000000157'
           x-stoplight:
-            id: 5b0zj49q9xz8w
+            id: 5b0zj49q9xz8x
     get:
       security:
         - OAuth2:
@@ -20929,11 +20929,11 @@ components:
           description: Identifier of the additional data field
           example: MyData
           x-stoplight:
-            id: 26dldjs1b73cf
+            id: 26dldjs1b73cr
         format:
           $ref: '#/components/schemas/FieldType'
           x-stoplight:
-            id: yvxfn8na31oej
+            id: yvxfn8na31oev
         legalType:
           type: string
           enum:
@@ -20942,7 +20942,7 @@ components:
           description: Additional data legal type. Empty for both.
           example: LEGAL_ENTITY
           x-stoplight:
-            id: b6f2wabgxim51
+            id: b6f2wabgxim53
         isSearchable:
           type: boolean
           x-stoplight:
@@ -20950,7 +20950,7 @@ components:
         isPersonalData:
           type: boolean
           x-stoplight:
-            id: xofzp4g9mdvil
+            id: xofzp4g9mdvib
         isSystemField:
           type: boolean
           x-stoplight:
@@ -21013,7 +21013,7 @@ components:
         isSearchable:
           type: boolean
           x-stoplight:
-            id: lwbvc75b16nhd
+            id: lwbvc75b16nhv
         isPersonalData:
           type: boolean
           x-stoplight:
@@ -21021,12 +21021,12 @@ components:
         isSystemField:
           type: boolean
           x-stoplight:
-            id: lxu529pis9bo6
+            id: lxu529pis9bov
         labels:
           $ref: '#/components/schemas/Translations'
           description: Label of the additional data
           x-stoplight:
-            id: xhv69ti6rw2rc
+            id: xhv69ti6rw2rf
         parameters:
           $ref: '#/components/schemas/AdditionalDataFieldParameters'
           description: Additional data parameters
